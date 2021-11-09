@@ -13,8 +13,13 @@ album1 = Album("Tranquility Base Hotel and Casino", "Rock", artist1)
 album2 = Album("Abbey Road", "Rock", artist2)
 album3 = Album("Currents", "Rock", artist3)
 
-artist_repository.save(artist3)
-album_repository.save(album3)
+# artist_repository.save(artist3)
+# album_repository.save(album3)
 
+# album_repository.delete_all()
+# artist_repository.delete_all()
+
+artist_repository.select(5)
+album_repository.select(6)
 
 pdb.set_trace()
