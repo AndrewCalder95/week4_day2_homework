@@ -24,3 +24,13 @@ def select(id):
     if result is not None:
         artist = Artist(result['id'], result['name'])
     return artist
+
+def select_all(artist):
+    albums = []
+    sql = "SELECT * FROM albums WHERE artist_id = %s"
+    values = [artist.id]
+    results = run_sql(sql, values)
+    for row in results:
+        album = Album(row['id'], row ['name'], row['genre'], artist )
+        albums.append(album)
+    return albums
