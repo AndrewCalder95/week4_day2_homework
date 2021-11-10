@@ -18,8 +18,8 @@ artist_repository.save(artist3)
 album_repository.save(album3)
 album_repository.save(album4)
 
-# album_repository.delete_all()
-# artist_repository.delete_all()
+album_repository.delete_all()
+artist_repository.delete_all()
 
 artist_repository.select(5)
 album_repository.select(6)
